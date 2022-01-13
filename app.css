@@ -1,4 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Ubuntu:wght@500&display=swap');
+
+
+body{
+    background-image: url('icons/bg1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
 .container{
     margin: 50px auto;
     text-align: center !important;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid black;
+    background: rgba(108, 107, 108, 0.67);
+}
+#temp-icon{
+    width: 10%;
+}
+#input-btn{
+    height: 20px;
+    width: 20%;
+    margin: 20px;
+}
+#submit-btn{
+    border: none;
+    width: 10%;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.2s ease-in-out;
+    background: linear-gradient(90deg, rgb(45, 40, 134) 0%, rgb(37, 37, 149) 0%, rgba(0, 212, 255, 1) 100% );
+    padding: 0.5rem 1rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.25rem;
+}
+@media(max-width: 768px) {
+    body{
+        background-image: url('icons/bg.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .container{
+        width: 80%;
+        background-image: url('icons/bg.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    #input-btn{
+        width: 80%;
+    }
+    #submit-btn{
+        width: 50%;
+    }
+    #temp-icon{
+        width: 50%;
+    }
+    
 }
